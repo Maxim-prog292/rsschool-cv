@@ -1,0 +1,38 @@
+.education {
+    width: 70%;
+    .education__h {
+        font-size: 3vmin;
+        font-weight: 600;
+        margin-bottom: 2vmin; 
+    }
+    .education__list {
+        padding-left: 34px;
+        box-sizing: border-box;
+        line-height: 1.8;
+        margin-bottom: 1vmin;
+    }
+    .list__item__source {
+        font-size: 2vmin;
+        font-weight: 600;
+        text-decoration: none;
+        color: $color-src;
+    }
+    .list__item__source:hover, .education__source:hover {
+        text-decoration: underline;
+    }
+    .education__source {
+        font-size: 2vmin;
+        font-weight: 600;
+        text-decoration: none;
+        color: $color-src;
+    }
+    .education__source.one{
+        margin-bottom: 1vmin;
+        display: inline-block;
+    }
+    .education__list__item {
+        font-size: 2vmin;
+    }
+    
+
+}

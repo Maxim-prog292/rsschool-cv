@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <title>CV</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header class="header">
+            <div class="header__logo">
+                <a class="header__logo__source" href="https://rs.school/js/"><img class="header__logo__image" src="images/rs_school_js.svg" alt="rs_school"></a>
+                <a class="header__logo__source" href="https://github.com/Maxim-prog292">Maxim-prog292</a>
+            </div>
+            <a class="header__source" href="">rsschool-cv</a> 
+            <nav class="header-menu">
+                <a class='header-menu__item' href="#contacts">Contacts</a>
+                <a class='header-menu__item' href="#About-me">About me</a>
+                <a class='header-menu__item' href="#Skills">Skills</a>
+                <a class='header-menu__item' href="#Code-examples">Code examples</a>
+                <a class='header-menu__item' href="#Work-experience">Work experience</a>
+                <a class='header-menu__item' href="#Education">Education</a>
+                <a class='header-menu__item' href="#English-language">English language</a>
+            </nav>
+            <h1 class="header__name">Maksim Magomedov</h1>
+        </header>
+        <hr />
+        <section class="contacts" id="contacts">
+            <h3 class="contact__h">Contacts for communication</h3>
+            <ul class="contacts__list">
+                <li class="list__item"><a class="list__item__source" target="_blank" title="Follow me" href="https://vk.com/only_me_your_dad">VKontakte</a></li>
+                <li class="list__item"><a class="list__item__source" target="_blank" title="Follow me" href="https://gist.github.com/Maxim-prog292">GitHub</a></li>
+                <li class="list__item"><a class="list__item__source" target="_blank" title="Follow me" href="https://ru.stackoverflow.com/users/447848/">Stackoverflow</a></li>
+                <li class="list__item"><a class="list__item__source" target="_blank" title="Follow me" href="https://t.me/maximprog292">Telegram</a></li>
+                <li class="list__item"><a class="list__item__source" target="_blank" title="Follow me" href="mailto:mcmagas00@gmail.com">E-mail</a></li>
+            </ul>
+        </section>
+        <hr />
+        <section class="about-me" id="About-me">
+            <h3 class="about-me__h">About me</h3>
+            <p class="about-me__paragraph">
+                I’m looking for new opportunities.<br />
+                <br />
+                I want to become a <strong>Frontend</strong> developer, and I also see myself as a <strong>Python</strong> developer. I think that in the future I will be able to combine these two directions, or switch exclusively to Python. But that’s another story.<br />
+                <br />
+                I have a big goal - to get a job in a large It corporation.<br />
+                <br />
+                Unfortunately, I have no work experience.<br />
+                <br />
+                I am a quick learner, a workaholic (this is not my strong point, but I will write about it), patient, sociable, stress-resistant.
+            </p>
+        </section>
+        <hr />
+        <section class="skills" id="Skills">
+            <h3 class="skills__h">Skills</h3>
+            <p class="skills__paragraph">
+                <span class="skills__paragraph__item" >HTML</span>&ensp;
+                <span class="skills__paragraph__item" >CSS</span>&ensp;
+                <span class="skills__paragraph__item" >SASS</span>&ensp;
+                <span class="skills__paragraph__item" >JavaScript</span>&ensp;
+                <span class="skills__paragraph__item" >Python</span>&ensp;<br/>
+                <span class="skills__paragraph__item" >Git</span>&ensp;
+                <span class="skills__paragraph__item" >BEM</span>&ensp;
+                <span class="skills__paragraph__item" >DevTools</span>&ensp;
+                <span class="skills__paragraph__item" >Photoshop</span>&ensp;
+                <span class="skills__paragraph__item" >Illustrator</span>&ensp;
+                <span class="skills__paragraph__item" >Figma</span>&ensp;
+                <span class="skills__paragraph__item" >MS Office</span>&ensp;
+            </p>
+        </section>
+        <hr />
+        <section class="examples" id="Code-examples">
+            <h3 class="examples__h">Code examples</h3>
+            <p class="examples__project">My project</p>
+            <a class="examples__source" href="https://maxim-prog292.github.io/Willberries/">Willberries</a>
+            <a class="examples__source" href="https://maxim-prog292.github.io/Flowers/">Flowers</a>
+            <a class="examples__source" href="https://maxim-prog292.github.io/Indicorp/">indicorp</a>
+            <a class="examples__source" href="https://maxim-prog292.github.io/EXPOFORUM/">EXPOFORUM</a>
+            <a class="examples__source" href="https://maxim-prog292.github.io/Qubit/">Qubit</a>
+            <a class="examples__source" href="https://maxim-prog292.github.io/Smart-Dent/">Smart-Dent</a>
+            <p class="examples__paragraph">Python</p>
+            <pre class="examples__code">
+
+    import random
+    from tkinter import *
+
+
+    def rand():
+        hexSystemStr = "0123456789abcdef"
+        listHex = ["#"]
+        while len(listHex) <= 6:
+            a = random.choice(hexSystemStr)
+            listHex.append(a)
+
+            strHex = ''.join(listHex)
+            print(strHex)
+            txt.insert(END, strHex)
+
+            return strHex
+
+    def clear():
+        txt.delete(0.0, END)
+
+        root = Tk()
+        root.title("HEX-color")
+        root.geometry("400x130")
+        root.resizable(width=False, 
+        height=False)
+
+        txt = Text(width=15, height=1, 
+        font="Arial 26")
+        txt.pack()
+
+        btn = Button(text="Generate", 
+        width=16, height=3, command=rand, 
+        font=20, state=NORMAL, bg="#ADFF2F")
+        btn.pack(side=LEFT)
+
+        btn = Button(text="Clear", 
+        width=16, height=3, command=clear, 
+        bg="#CD5C5C", font=20)
+
+        btn.pack(side=RIGHT)
+
+
+        root.mainloop()
+            </pre>
+        </section>
+        <hr />
+        <section class="experience" id="Work-experience">
+            <h3 class="experience__h">Work experience</h3>
+            <p>Unfortunately, I have no work experience.</p>
+        </section>
+        <hr />
+        <section class="education" id="Education">
+            <h3 class="education__h">Education</h3>
+            <ul class="education__list">
+                <li class="education__list__item">Courses I took</li>
+                <ul class="education__list">
+                    <li class="education__list__item">Sololearn Python course after <a class="list__item__source" href="https://www.chitai-gorod.ru/catalog/book/938300/">Learning Python</a> </li>
+                    <li class="education__list__item">Sololearn JS course after <a class="list__item__source" href="https://learn.javascript.ru/">Modern JavaScript Tutorial</a> and JS course Udemy</li>
+                    <li class="education__list__item">Sololearn Layout course after <a class="list__item__source" href="http://code.mu/ru/markup/book/prime/">Layout tutorial for beginners</a>  and GloAcademy</li>
+                </ul>
+            </ul>
+            <a class="education__source one" href="https://maxim-prog292.github.io/Portfolio/">My work on the layout</a><br />
+            <a class="education__source" href="https://github.com/Maxim-prog292?tab=repositories">My work is available on GitHub</a>
+        </section>
+        <hr />
+        <section class="english" id="English-language">
+            <h3 class="english__h">English language</h3>
+            <p class="english__paragraph"> 
+                <span class="paragraph__item">pre-intermediate</span><br />
+                According to the <a class="paragraph__source" href="http://grammar-tei.com/">site</a> version
+            </p>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.examples {
+    width: 70%;
+    .examples__h {
+        font-size: 3vmin;
+        font-weight: 600;
+        margin-bottom: 2vmin; 
+    }
+    .examples__source {
+        display: block;
+        font-size: 2.5vmin;
+        font-weight: 600;
+        text-decoration: none;
+        color: $color-src;
+        margin-bottom: 2vmin;
+    }
+    .examples__source:hover {
+        text-decoration: underline;
+    }
+    .examples__paragraph, .examples__project {
+        font-size: 2.5vmin;
+        margin-bottom: 2vmin;
+    }
+    .examples__code {
+        font-size: 1.5vmin;
+        background-color: rgba(246,248,250, 1);
+        font-family: monospace;
+    }
+}
