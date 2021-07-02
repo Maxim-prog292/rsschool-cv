@@ -1,0 +1,26 @@
+.english {
+    width: 70%;
+    .english__h {
+        font-size: 3vmin;
+        font-weight: 600;
+        margin-bottom: 2vmin; 
+    }
+    .english__paragraph {
+        margin-bottom: 30px;
+    }
+    .paragraph__item {
+        text-transform: uppercase;
+    }
+    .paragraph__source {
+        font-size: 2vmin;
+        font-weight: 600;
+        text-decoration: none;
+        color: $color-src;
+    }
+    .paragraph__source:hover {
+        text-decoration: underline;
+    }
+    p {
+        font-size: 2vmin;
+    }
+}

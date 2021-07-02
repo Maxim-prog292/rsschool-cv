@@ -1,0 +1,22 @@
+.contacts {
+    width: 70%;
+    .contact__h {
+        font-size: 3vmin;
+        font-weight: 600;
+        margin-bottom: 2vmin; 
+    }
+    .contacts__list {
+        padding-left: 34px;
+        box-sizing: border-box;
+        line-height: 3vmin;
+        .list__item__source {
+            font-size: 2.6vmin;
+            font-weight: 600;
+            text-decoration: none;
+            color: $color-src;
+        }
+        .list__item__source:hover {
+            text-decoration: underline;
+        }
+    }
+}
